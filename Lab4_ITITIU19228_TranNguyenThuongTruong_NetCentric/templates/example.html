@@ -1,0 +1,34 @@
+{{define "title"}}Lab 4 - NetCentric{{end}}
+
+{{define "body"}}
+<h1>Welcome to Very Simple Web Server</h1>
+
+<div>
+    <h3>Imge</h3>
+    <img src="/static/image.jpg" alt="image" width="300" height="200">
+</div>
+
+<div>
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="/static/audio.mp3" type="audio/ogg">
+        <source src="/static/audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+</div>
+
+<div>
+    <h3>Wave</h3>
+    <audio controls>
+        <source src="/static/wave.wav" type="audio/wav">
+        <source src="/static/wave.wav" type="audio/x-wav">
+        Your browser does not support the audio tag.
+      </audio>
+</div>
+
+<div>
+    <h3>Midi</h3>
+    <midi-player src="/static/jazz.mid" sound-font>
+    </midi-player>
+</div>
+{{end}}
